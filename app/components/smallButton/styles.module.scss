@@ -1,0 +1,22 @@
+@import "../../../styles/_var.scss";
+@import "../../../styles/_mixins.scss";
+
+.smallButton {
+    box-shadow: 3.1px 3.1px 0px 0px #DFDFDF inset;
+    box-shadow: -3.1px -3.1px 0px 0px #808080 inset;
+    box-shadow: 1.55px 1.55px 0px 0px #FFFFFF inset;
+    box-shadow: -1.55px -1.55px 0px 0px #0A0A0A inset;
+    background: #C0C0C0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include size(40px, 35px);
+    @include for_laptop {
+        @include size(16px, 14px);
+    }
+    svg{
+        @include for_mobile {
+            @include size(8px);
+        }
+    }
+}

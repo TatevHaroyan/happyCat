@@ -1,0 +1,43 @@
+// colors
+$primary-color: #1413FF;
+$white:#FFFFFF;
+$error-color:#FF0000;
+$black:#000000;
+$yellow:#FFF60E;
+$light-yellow:#F7F4D5;
+$light-blue:#8097E5;
+
+// font sizes
+$fz-10: 10px;
+$fz-12: 12px;
+$fz-13: 13px; 
+$fz-16: 16px;
+$fz-14:14px;
+$fz-18:18px;
+$fz-19:19px;
+$fz-20:20px;
+$fz-22:22px;
+$fz-24:24px;
+$fz-28:28px;
+$fz-30:30px;
+$fz-34:34px;
+$fz-37:37px;
+$fz-40:40px;
+$fz-42:42px;
+$fz-55:55px;
+$fz-277:277px;
+
+// font weights 
+$regular:400;
+$medium:500;
+$bold:700;
+$semiBold:600;
+
+%font-m-bold { 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: $bold;
+}
+%font-r-bold {
+    font-family: 'Roboto'; 
+    font-weight: $bold;
+}

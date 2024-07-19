@@ -1,0 +1,194 @@
+@import "../../../styles/_var.scss";
+@import "../../../styles/_mixins.scss";
+
+.mainContainer {
+    margin-top: -400px;
+
+    .headingContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .headingImage {
+        @include size(814px, 167px);
+        @include for_laptop {
+            @include size(387px, 104px);
+        }
+    }
+
+    .about {
+        background-color: $light-yellow;
+        box-shadow: -6.94px -6.94px 0px 0px #0A0A0A inset;
+        width: 90%;
+        margin: auto;
+
+        .shadow1 {
+            height: 100%;
+            width: 100%;
+            box-shadow: 6.94px 6.94px 0px 0px #FFFFFF inset;
+
+            .shadow2 {
+                height: 100%;
+                width: 100%;
+                box-shadow: -13.89px -13.89px 0px 0px #808080 inset;
+
+                .shadow3 {
+                    height: 100%;
+                    width: 100%;
+                    box-shadow: 13.89px 13.89px 0px 0px #DFDFDF inset;
+                    margin-top: -50px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-bottom: 97px;
+
+                    .aboutText {
+                        color: $black;
+                        width: 945px;
+                        margin-top: 150px;
+                        margin-bottom: 71px;
+                        font-family: Arial;
+                        font-size: 41.67px;
+                        font-style: italic;
+                        font-weight: 400;
+                        line-height: 47.91px;
+                        text-align: center;
+
+                        @include for_laptop {
+                            margin-top: 83px;
+                            margin-bottom: 54px;
+                            font-size: 30px;
+                            line-height: 34.5px;
+                            width: 681px;
+                           
+                        }
+                        @include for_mobile {
+                            font-family: Arial;
+                            font-size: 28.13px;
+                            font-style: italic;
+                            font-weight: 400;
+                            line-height: 32.34px;
+                            text-align: center;
+                            width: 90%;
+                            margin-top: 88px;
+                        margin-bottom: 44px;
+                        }
+                    }
+
+                    .buttonContainer {
+                        font-family: IBM Plex Mono;
+                        display: flex;
+                        align-items: center;
+                        gap: 11px;
+                        text-transform: uppercase;
+                        
+                       
+                        .buttonContainerImage{
+                            @include for_laptop {
+                                padding: 39px 20px;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .buttonCont {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 115px;
+            gap: 28px;
+            @include for_laptop {
+                margin-bottom: 83px;
+            }@include for_mobile {
+                margin-bottom: 67px;
+            }
+        }
+
+        .imagesCont {
+            box-shadow: -6.94px -6.94px 0px 0px #0A0A0A inset;
+            background-color: $primary-color;
+            margin: auto;
+            width: 90%;
+            @include for_mobile {
+                width: 100%;
+            }
+            .imagesContHeading {
+                font-family: '__IBM_Plex_Mono_4da429';
+                font-size: 97.22px;
+                font-weight: 700;
+                line-height: 126.39px;
+                text-align: left;
+                color: $yellow;
+                text-transform: uppercase;
+                text-shadow: 4.17px 8.33px 2.78px #000000E5;
+                padding-top: 25px;
+                @include for_laptop {
+                    font-size: 70px;
+                    text-shadow: 3px 6px 2px #000000E5;
+                }
+                @include for_mobile {
+                    font-size: 46.88px;
+                    font-weight: 700;
+                    line-height: 60.94px;
+                    text-align: left;
+                    
+                }
+            }
+
+            .imagesContShadow1 {
+                box-shadow: 6.94px 6.94px 0px 0px #FFFFFF inset;
+
+                .imagesContShadow2 {
+                    box-shadow: -13.89px -13.89px 0px 0px #808080 inset;
+
+                    .imagesContShadow3 {
+                        box-shadow: 13.89px 13.89px 0px 0px #DFDFDF inset;
+                        padding-bottom: 112px;
+
+                        .imagesHeading {
+                            margin: auto;
+                            width: 90%;
+                        }
+
+                        .imagesList {
+                            position: relative;
+                            margin-top: 14px;
+                            margin: auto;
+                            width: 90%;
+                            background-color: $light-blue;
+                            padding: 36px 55px;
+                            display: flex;
+                            gap: 41px;
+                            @include for_mobile {
+                                padding: 10px 18px;
+                                flex-direction: column;
+                            }
+                            .imagesCol {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 47px;
+                                @include for_mobile {
+                                    width: 100%;
+                                    gap: 18px;
+                                }
+                            }
+
+                            .happyhappy {
+                                position: absolute;
+                                right: 0;
+                                bottom: 0;
+                                width: 68%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+    }
+}

@@ -1,0 +1,33 @@
+@import "../../../styles/_var.scss";
+@import "../../../styles/_mixins.scss";
+
+.button {
+    box-shadow: 8.97px 8.97px 0px 0px #DFDFDF inset;
+    
+    .buttonShadow1 {
+        box-shadow: -8.97px -8.97px 0px 0px #808080 inset;
+
+        .buttonShadow2 {
+            box-shadow: 4.49px 4.49px 0px 0px #FFFFFF inset;
+
+            .buttonShadow3 {
+                box-shadow: -4.49px -4.49px 0px 0px #0A0A0A inset;
+
+                .buttonShadow4 {
+                    box-shadow: 9.37px 9.37px 0px 0px #0000004D;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    @include size(355px, 107px);
+                    @include for_laptop {
+                        @include size(256px, 77px);
+                    }
+                    @include for_laptop {
+                        @include size(343px, 93px);
+                    }
+                }
+
+            }
+        }
+    }
+}
